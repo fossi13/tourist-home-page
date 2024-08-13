@@ -7,7 +7,7 @@ function Homepage() {
 
   const dataTravel = async () => {
     const result = await axios.get(
-      `http://localhost:4001/trips?keywords=${findTravel}`
+      `https://tourist-home-page-8ost.vercel.app/trips?keywords=${findTravel}`
     );
     setDataTravel(result.data.data);
     console.log(result.data.data);
